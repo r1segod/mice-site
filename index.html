@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 популярных видов компьютерных мышей</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --bg-alt: #171a24;
+    --card: #1c2030;
+    --text: #eef0f6;
+    --text-dim: #9aa0b4;
+    --accent: #7c8cff;
+    --accent-2: #5eead4;
+    --border: #2a2f42;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  header {
+    padding: 80px 24px 60px;
+    text-align: center;
+    background: radial-gradient(circle at 50% 0%, var(--bg-alt), var(--bg));
+  }
+
+  header h1 {
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 16px;
+  }
+
+  header p {
+    color: var(--text-dim);
+    max-width: 560px;
+    margin: 0 auto;
+    font-size: 17px;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 24px 80px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 24px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+  }
+
+  .icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+
+  .card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    color: var(--text-dim);
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(124, 140, 255, 0.12);
+    color: var(--accent);
+    border: 1px solid rgba(124, 140, 255, 0.25);
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    color: var(--text-dim);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f7f8fb;
+      --bg-alt: #ffffff;
+      --card: #ffffff;
+      --text: #1a1d29;
+      --text-dim: #676e85;
+      --border: #e4e6ef;
+    }
+    .card { box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>5 популярных видов компьютерных мышей</h1>
+  <p>Разбираемся, чем отличаются современные мыши и какую выбрать под свои задачи</p>
+</header>
+
+<main>
+  <div class="grid">
+
+    <div class="card">
+      <span class="icon">🖱️</span>
+      <h2>Беспроводная мышь</h2>
+      <p>Работает по Bluetooth или радиоканалу (USB-приёмник). Никаких проводов на столе, современные модели почти не уступают проводным по задержке отклика.</p>
+      <div class="tags">
+        <span class="tag">Мобильность</span>
+        <span class="tag">Bluetooth / 2.4 ГГц</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="icon">🎮</span>
+      <h2>Игровая мышь</h2>
+      <p>Высокая частота опроса, точный сенсор с большим DPI, программируемые кнопки и подсветка RGB. Создана для быстрой и точной реакции в играх.</p>
+      <div class="tags">
+        <span class="tag">Высокий DPI</span>
+        <span class="tag">RGB</span>
+        <span class="tag">Программируемые кнопки</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="icon">🖐️</span>
+      <h2>Вертикальная эргономичная мышь</h2>
+      <p>Корпус повёрнут почти на 90°, рука держится в естественном положении «рукопожатия». Снижает нагрузку на запястье и помогает при длительной работе за компьютером.</p>
+      <div class="tags">
+        <span class="tag">Здоровье кисти</span>
+        <span class="tag">Профилактика туннельного синдрома</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="icon">🔴</span>
+      <h2>Трекбол</h2>
+      <p>Вместо перемещения по столу курсор управляется вращением шарика пальцем или ладонью. Не требует свободного места и минимизирует движения руки.</p>
+      <div class="tags">
+        <span class="tag">Экономия места</span>
+        <span class="tag">Точность</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="icon">💼</span>
+      <h2>Компактная дорожная мышь</h2>
+      <p>Уменьшенный корпус, лёгкий вес и складной или съёмный приёмник. Удобно брать с собой в сумке для ноутбука в поездки и командировки.</p>
+      <div class="tags">
+        <span class="tag">Портативность</span>
+        <span class="tag">Лёгкий вес</span>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  Информационная страница о видах компьютерных мышей
+</footer>
+
+</body>
+</html>
